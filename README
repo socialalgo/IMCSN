@@ -1,0 +1,14 @@
+This file provides instruction on running the code.
+
+required library:
+networkx 1.11
+
+Input file format: each line corresponds to an edge and consists of two integers which represent two node id and seperated by space. (See datasets/BK.txt for an example. BK.txt refers to Brightkite in the experiment)
+
+Exmaple of Running command: python main.py --input datasetpath --t 50 --k 30 --epsilon 0.00001
+
+t: the number of seed nodes
+k: the number of edges to be selected per user
+epsilon: the error ratio for controling the convergence
+
+Note: all datasets (excluding datasets from Tencent) are public and accessible via http://konect.cc/. Here we only include BK.txt for illustration since Gitfront cannot well handle large-size folders.
